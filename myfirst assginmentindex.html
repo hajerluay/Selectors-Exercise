@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS Selectors Exercise</title>
+    <style>
+        .color{
+            color:yellow;
+        }
+        .mycolor{
+            color:green;
+        }
+        .myitem {
+            color:blue;
+        }
+        .myitem li{
+            color:red;
+
+        }
+        .mytd{
+            color:blue;
+        }
+        .data{
+            color:purple;
+        }
+        .mylabel label{
+            color:red;
+        }
+        .gencolor label{
+            color:red;
+        }
+        #leng{
+            color:red;
+        }
+
+
+
+
+        #twiter{
+            color:aquamarine;
+        }
+        #face{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<h1>About</h1>
+<p>It can be intimidating for women to learn and ask questions when they are in an <strong class="color">extreme minority</strong>. While open and welcoming, today's budding developer community is up to <strong class="color">91% male</strong>. If we can empower more females with the confidence in their technological capabilities <em class="color">we can begin to change this landscape</em>.
+</p>
+<h2 class="mycolor">Our Locations</h2>
+<ul>
+    <li>USA
+        <ul class="myitem">
+            <li><a href="">New York</a></li>
+            <li><a href="">Columbus</a></li>
+            <li><a href="">Austin</a></li>
+            <li><a href="">Philly</a></li>
+        </ul>
+    </li>
+    <li>World
+        <ul class="myitem">
+            <li><a href="">Ottawa</a></li>
+            <li><a href="">Sydney</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h2 class="mycolor">Upcoming Classes</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Location</th>
+        <th>Topic</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="mytd">New York</td>
+        <td class="data">JavaScript &amp; jQuery</td>
+    </tr>
+    <tr>
+        <td class="mytd">San Francisco</td>
+        <td class="data">HTML &amp; CSS</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2 class="mycolor">Sign Up!</h2>
+<form action="" method="post" class="mylabel">
+    <label>Name: <input name="name" type="text"></label>
+    <br>
+    <label>Email: <input name="email" type="email"></label>
+    <br>
+    <label>Location:
+        <select name="location">
+            <option value="sf">San Francisco</option>
+            <option value="nyc">New York</option>
+        </select></label>
+    <br>
+    <fieldset class="gencolor">
+        <legend id="leng">Gender:</legend>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+    </fieldset>
+    <br>
+    <label>Experience:
+        <br>
+        <textarea name="experience"></textarea>
+    </label>
+    <br>
+    <button type="submit">Sign Up</button>
+</form>
+
+<br><br>
+<a id="twiter" href="">Twitter</a> | <a id="face" href="">Facebook</a> | <a id="face" href="">Flickr</a>
+
+</body>
+</html>
